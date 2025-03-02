@@ -1,0 +1,93 @@
+
+<html>
+<head> 
+    <title> Registration Form</title>
+    </head>
+<body>    
+        <h2>Registration Form</h2>
+        <form action="">
+<table align="center" border="2">
+<tr>
+<td><label for="first">First Name:</label>
+</td>
+<td><input type="text" id="first" name="first" required />
+</td>
+</tr>
+<tr>
+<td>
+          <label for="last">Last Name:</label>          
+</td>
+<td>
+     <input type="text" id="last" name="last" required />       
+</td>
+</tr>
+<tr>
+<td>  
+            <label for="email">Email:</label>
+            
+</td>
+<td>
+      <input type="email" id="email" name="email" required />          
+</td>
+</tr>
+<tr>
+<td>
+    <label for="password">Password:</label>
+          
+</td>
+<td>
+     <input type="password" id="password" name="password"
+                   pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" 
+                   title="Password must contain at least one number, 
+                           one alphabet, one symbol, and be at 
+                           least 8 characters long" required />              
+</td>
+</tr>
+<tr>
+<td><label for="repassword">Re-type Password:</label>    
+    
+</td>
+<td>
+    <input type="password" id="repassword" name="repassword" required />       
+</td>
+</tr>
+<tr>
+<td>
+       <label for="mobile">Contact:</label>
+      
+    
+</td>
+<td>
+             <input type="text" id="mobile" name="mobile" maxlength="10" required />    
+</td>
+</tr>
+
+<tr>
+<td>
+      
+           
+            <label for="gender">Gender:</label>
+            
+      
+    
+</td>
+<td>
+     <select id="gender" name="gender" required>
+                <option value="male"> Male
+                </option>
+                <option value="female"> Female
+                </option>
+                <option value="other"> Other
+                </option>
+            </select>       
+</td>
+</tr>
+<tr>
+<td>    <button type="submit"> Submit </button>
+</td>
+</tr>      
+             </form>
+
+</body>
+
+</html>
